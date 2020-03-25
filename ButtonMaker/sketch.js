@@ -56,6 +56,8 @@ function setup() {
  canvas = createCanvas(windowWidth, windowHeight);
   canvas.style('z-index', '-1');
   canvas.position(0,0);
+  imgfil.hide()
+
  
   col1 = color(255,0,0)
   col2 = color(0,255,0)
@@ -162,7 +164,7 @@ function fina(){
     finbut = createButton(buttonContent)
   finbut.size(buttonSize[0], buttonSize[1]);
   finbut.style('background-color', buttonColor)
-  finbut.mousePressed(imgfil.show());
+  finbut.mousePressed(createImg(imgfil));
 }
 
 
@@ -176,15 +178,15 @@ function finb(){
     finbut = createButton(buttonContent)
   finbut.size(buttonSize[0], buttonSize[1]);
   finbut.style('background-color', buttonColor)
-  finbut.mousePressed(wavfil.play);
+  finbut.mousePressed(wavfil.play());
   }
 
 function finc(){
   background(125,125,0);
-  prompt5c.hide();
-  mem.hide();
-  com.hide();
-  cut.hide();
+  prompt4.hide();
+  pic.hide();
+  wav.hide();
+  vid.hide();
   finbut = createButton(buttonContent)
   finbut.size(buttonSize[0], buttonSize[1]);
   finbut.style('background-color', buttonColor)
