@@ -56,9 +56,7 @@ function setup() {
  canvas = createCanvas(windowWidth, windowHeight);
   canvas.style('z-index', '-1');
   canvas.position(0,0);
-  imgfil.hide()
 
- 
   col1 = color(255,0,0)
   col2 = color(0,255,0)
   col3 = color(0,0,255)
@@ -164,7 +162,7 @@ function fina(){
     finbut = createButton(buttonContent)
   finbut.size(buttonSize[0], buttonSize[1]);
   finbut.style('background-color', buttonColor)
-  finbut.mousePressed(createImg(imgfil));
+  finbut.mousePressed(Image(imgfil,0,0));
 }
 
 
