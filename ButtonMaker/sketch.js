@@ -51,7 +51,7 @@ function preload() {
    wav2 = loadSound("fgsdg.wav")
    wav3 = loadSound("dssfv.wav")
 }
-  
+
 function setup() {
  canvas = createCanvas(windowWidth, windowHeight);
   canvas.style('z-index', '-1');
@@ -60,15 +60,15 @@ function setup() {
   col1 = color(255,0,0)
   col2 = color(0,255,0)
   col3 = color(0,0,255)
-  
+
   hi = createP("Hi there. Isn't it terrifying that 99% of the information you're agonizing over will be of absolutely no use to you? I bet if I sat you down and told you to make me a button in a web browser, you'd start to cry. Well no more. We're going to teach you to make your very own functioning button! It's just gonna look like some text, though. Give us your name and we'll be off.");
   buttonMaker = createInput("");
-  
+
   background(200,100,125);
   button = createButton("Save me from obsolescence")
   button.position(160, 105);
   button.mousePressed(process);
-  
+
 }
 
 function process(){
@@ -93,7 +93,7 @@ function step2(){
   buttxt = createInput("")
   next = createButton("Next");
   next.mousePressed(step3);
-  
+
 }
 
 function step3(){
@@ -194,4 +194,3 @@ function finc(){
 function draw(){
 
 }
-  
